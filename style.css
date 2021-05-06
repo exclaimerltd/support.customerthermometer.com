@@ -641,9 +641,9 @@ ul {
 }
 
 /***** Header *****/
-.header {
-  max-width: 1160px;
-  margin: 0 auto;
+.header {/* 
+  max-width: 1160px; */
+  margin: 0 0;
   padding: 0 5%;
   position: relative;
   align-items: center;
@@ -652,12 +652,12 @@ ul {
   justify-content: space-between;
 }
 
-@media (min-width: 1160px) {
+/* @media (min-width: 1160px) {
   .header {
     padding: 0;
     width: 90%;
   }
-}
+} */
 
 .logo img {
   max-height: 37px;
@@ -706,7 +706,7 @@ ul {
 
 .nav-wrapper a {
   border: 0;
-  color: $link_color;
+  color: $brand_text_color;
   display: none;
   font-size: 14px;
   padding: 0 20px 0 0;
@@ -833,7 +833,7 @@ ul {
 
 .user-info > button {
   border: 0;
-  color: $link_color;
+  color: $brand_text_color;
   min-width: 0;
   padding: 0;
   white-space: nowrap;
@@ -995,13 +995,15 @@ ul {
 
 .search-full input[type="search"] {
   border: 1px solid #fff;
+  box-shadow: 0 0 0 5px rgba(255,255,255,.15)
 }
 
-.search-icon {
+.search-icon {/* 
   position: relative;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%); */
   position: absolute;
+  top: 62px;
   left: 15px;
   z-index: 1;
   width: 18px;
@@ -1020,9 +1022,10 @@ ul {
 
 /***** Hero component *****/
 .hero {
-  background-image: url($homepage_background_image);
+/*   background-image: url($homepage_background_image);
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
+  background: linear-gradient(270deg, #2eb3b2 0%, #3bc284 100%) !important;
   height: 300px;
   padding: 0 20px;
   text-align: center;
@@ -1035,6 +1038,11 @@ ul {
   transform: translateY(-50%);
   max-width: 610px;
   margin: 0 auto;
+  color: $brand_text_color
+}
+
+.hero-inner h2 {
+  
 }
 
 .page-header {
@@ -1118,6 +1126,7 @@ ul {
 
 /***** Blocks *****/
 /* Used in Homepage#categories and Community#topics */
+
 .blocks-list {
   display: flex;
   flex-wrap: wrap;
@@ -1136,12 +1145,17 @@ ul {
   border: 1px solid $brand_color;
   border-radius: 4px;
   box-sizing: border-box;
-  color: $brand_color;
+  color: $brand_text_color;
   display: flex;
   flex: 1 0 340px;
   margin: 0 0 30px;
   max-width: 100%;
   text-align: center;
+  background-color: $brand_color
+}
+
+.blocks-item a {
+  color: $brand_text_color;
 }
 
 @media (min-width: 768px) {
@@ -1151,11 +1165,11 @@ ul {
 }
 
 .blocks-item:hover, .blocks-item:focus, .blocks-item:active {
-  background-color: $brand_color;
+  background-color: $brand_text_color;
 }
 
 .blocks-item:hover *, .blocks-item:focus *, .blocks-item:active * {
-  color: $brand_text_color;
+  color: $brand_color;
   text-decoration: none;
 }
 
@@ -4744,4 +4758,8 @@ html[dir="rtl"] .notification-left-aligned {
 
 .dropdown-chevron-icon {
   vertical-align: middle;
+}
+
+.site-header {
+  background: linear-gradient(270deg, #2eb3b2 0%, #3bc284 100%) !important;
 }

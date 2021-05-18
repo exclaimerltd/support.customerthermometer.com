@@ -1,7 +1,7 @@
 <a class="skip-navigation" tabindex="1" href="#main-content">{{t 'skip_navigation' }}</a>
 
-<header class="header">
-  <div class="logo">
+<header class="header site-header">
+  <div class="logo ">
     {{#link 'help_center'}}
       <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}" />
       {{#if settings.show_brand_name}}
@@ -16,7 +16,10 @@
       </svg>
     </button>
     <nav class="user-nav" id="user-nav">
-      {{link 'community'}}
+      {{!-- {{link 'community'}} --}}
+      <a href="https://www.customerthermometer.com/user-guide/">User Guide Home</a>
+      <a href="https://app.customerthermometer.com/?template=login">App login</a>
+      <a href="https://www.customerthermometer.com/resources/how-to-embed-customer-thermometer-into-your-business/">Survey tips & advice</a>
       {{link 'new_request' class='submit-a-request'}}
     </nav>
     {{#if signed_in}}

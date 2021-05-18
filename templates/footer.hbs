@@ -23,3 +23,128 @@
     </div>
   </div>
 </footer>
+
+<script type="text/javascript">
+  window.zESettings = {
+    webWidget: {
+      // Color API - All Sites
+      color: {
+        theme: "#702fa0",
+        launcher: "#702fa0", // This will also update the badge
+        launcherText: "#FFFFFF",
+        button: "#702fa0",
+        buttonText: "#702fa0",
+        resultLists: "#702fa0",
+        header: "#702fa0",
+        articleLinks: "#4bb7b2",
+      },
+      // Contact Form API */
+      contactForm: {
+        suppress: false,
+        title: {
+          "*": "Raise a ticket",
+        },
+        subject: false,
+        attachments: true,
+      },
+      // Chat API - All Sites
+      chat: {
+        suppress: false,
+        title: {
+          "*": "Ask Us Anything",
+        },
+        departments: {
+          enabled: ["Technical Support"],
+          select: "Technical Support",
+        },
+        concierge: {
+          avatarPath: 'https://cdn.customerthermometer.com/zendesk/widget/ct-logo.png',
+          name: 'Customer Thermometer',
+          title: {'*':'Ministry of Magic'}
+        },
+        profileCard: {
+          avatar: true,
+          rating: true,
+          title: true,
+        },
+        hideWhenOffline: true,
+        prechatForm: {
+          greeting: {
+            "*":
+              "To ensure our representatives can help you as quickly as we can.\n\nPlease provide as much information as you can about your query in the message area below.\n",
+          },
+          departmentLabel: {
+            "*": "Select a department",
+          },
+        },
+        offlineForm: {
+          greeting: {
+            "*": "We aren't online right now, please leave a message",
+          },
+        },
+      },
+      // Helpcenter API - All Sites
+      helpCenter: {
+        suppress: false,
+        title: {
+          "*": "Search for help",
+        },
+        searchPlaceholder: {
+          "*": "Search our User Guide",
+        },
+      },
+      // Answerbot API
+      answerBot: {
+        suppress: false,
+        title: {
+          "*": "Chat with us!",
+        },
+        contactOnlyAfterQuery: true,
+        search: {
+          labels: ["I would like help."],
+        },
+        avatar: {
+          url:
+            "https://cdn.customerthermometer.com/zendesk/widget/256.png",
+          name: {
+            "*": "Customer Thermometer",
+          },
+        },
+      },
+      // Launcher API - All Sites
+      launcher: {
+        label: {
+          "*": "Get help?",
+        },
+        chatLabel: {
+          "*": "Chat online",
+        },
+        talkLabel: {
+          "*": "Ask for a callback"
+        },
+        mobile: {
+          labelVisible: true,
+        },
+      },
+      // Contact options - All Sites
+      contactOptions: {
+        enabled: true,
+        title: {
+          "*": "Contact Us",
+        },
+        contactButton: {
+          "*": "Get in touch",
+        },
+        chatLabelOnline: {
+          "*": "Chat online",
+        },
+        chatLabelOffline: {
+          "*": "Chat is unavailable",
+        },
+        contactFormLabel: {
+          "*": "Raise a ticket",
+        },
+      },
+    },
+  };
+</script>

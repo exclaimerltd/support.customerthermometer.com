@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 /***** Normalize.css *****/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
@@ -4760,6 +4761,246 @@ html[dir="rtl"] .notification-left-aligned {
   vertical-align: middle;
 }
 
-.site-header {
+/*
+  ----CUSTOM THEME SETTINGS----
+  All new theme settings are below this section.
+*/
+
+body, h1, h2, h3, h4, h5, h6, p{
+  font-family: 'Roboto', sans-serif;
+}
+
+.powered-by-zendesk{
+  display: none;
+}
+
+.section{
+  margin-bottom: 30px;
+}
+
+.user-nav > a{
+  color: #2F3941;
+  transition: ease all 0.3s;
+}
+
+.user-info > button{
+  color: #2F3941;
+}
+
+.hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: unset;
+  padding: 150px 0;
   background: linear-gradient(270deg, #2eb3b2 0%, #3bc284 100%) !important;
+}
+
+.hero-inner{
+  position: unset;
+  top: unset;
+  transform: unset;
+  width: 100%;
+}
+
+
+
+.search::before{
+  position: absolute;
+  top: 9px;
+  left: 15px;
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 400;
+  content: "\f002";
+  color: #666;
+}
+
+.search-icon{
+  display: none;
+}
+
+.footer{
+  padding: 30px 0;
+  margin-top: 30px;
+  background-color: #f7f7f7;
+  border-top: 0;
+  color: #999;
+}
+
+.footer-inner{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer > .footer-inner > a{
+  color: #999;
+  text-decoration: none;
+  transition: ease all 0.3s;
+}
+
+.footer > .footer-inner > a:hover{
+  color: #702fa0;
+}
+
+.footer-menu{
+  display: flex;
+}
+
+.footer-menu > li{
+  margin: 0 20px;
+}
+
+.footer-menu > li > a{
+  color: #999;
+  text-decoration: none;
+  transition: ease all 0.3s;
+}
+
+.footer-menu > li > a:hover{
+  color: #702fa0;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: auto;
+  max-width: 1160px;
+  min-width: 360px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  margin: 0 10px;
+}
+
+.col-2{
+  flex: 2;
+}
+
+.cont-grey{
+  background-color: #f7f7f7;
+  border: 1px solid #f0f0f0;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.cont-grey.recent-activity{
+  margin-bottom: 0;
+}
+
+.cont-grey > h2{
+  text-align: left;
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.cont-grey > .submit-a-request{
+  display: inline-block;
+  padding: 8px 12px;
+  margin-top: 10px;
+  border: 1px solid #008edb;
+  border-radius: 50px;
+  background-color: #008edb;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  transition: ease all 0.3s;
+}
+
+.recent-activity-item{
+  border: 0;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.recent-activity-item:last-child{
+  margin-bottom: 0;
+}
+
+.recent-activity-header{
+  text-align: left;
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.recent-activity-item-parent{
+  display: none;
+}
+
+.recent-activity-item-meta{
+  display: none;
+}
+
+.recent-activity-controls{
+  display: none !important;
+}
+
+.category-menu{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: auto;
+  width: 100%;
+}
+
+.category-menu > li{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 48%;
+  margin: 0 1%;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.category-menu > li > a{
+  align-items: center;
+  padding: 25px 10px !important;
+  transition: ease all 0.3s;
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+}
+
+.category-menu > li > a:hover{
+  background: #fafafa;
+}
+
+zd-autocomplete{
+  background-color: #fff;
+  border-radius: 4px;
+  border: 0;
+  position: absolute;
+  z-index: 1000000;
+}
+
+zd-autocomplete > zd-autocomplete-multibrand{
+  background-color: #fff;
+  border-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+zd-autocomplete > zd-autocomplete-multibrand:last-child{
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+zd-autocomplete > zd-autocomplete-multibrand:hover{
+  border-radius: 4px;
+}
+
+zd-autocomplete-multibrand > zd-autocomplete-title-multibrand{
+  color: #702fa0;
 }

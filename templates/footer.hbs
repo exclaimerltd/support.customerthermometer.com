@@ -1,8 +1,22 @@
 <footer class="footer">
   <div class="footer-inner">
-    {{#link 'help_center'}}{{help_center.name}}{{/link}}
+    {{#link 'help_center'}}
+      © 2020 Customer Thermometer Ltd - THE customer satisfaction survey
+    {{/link}}
 
-    <div class="footer-language-selector">
+    <ul class="footer-menu">
+      <li>
+        <a href="https://www.customerthermometer.com/system-status/">System Status</a>
+      </li>
+      <li>
+        <a href="https://www.customerthermometer.com/privacy-policy/">Privacy Policy</a>
+      </li>
+      <li>
+        <a href="https://www.customerthermometer.com/terms-of-use/">Terms of use</a>
+      </li>
+    </ul>
+
+    {{!-- <div class="footer-language-selector">
       {{#if alternative_locales}}
         <div class="dropdown language-selector">
           <button class="dropdown-toggle" aria-haspopup="true">
@@ -20,7 +34,7 @@
           </span>
         </div>
       {{/if}}
-    </div>
+    </div> --}}
   </div>
 </footer>
 

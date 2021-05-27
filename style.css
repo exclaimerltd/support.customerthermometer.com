@@ -4965,12 +4965,18 @@ body, h1, h2, h3, h4, h5, h6, p{
 }
 
 .category-menu > li > a{
+  display: flex;
   align-items: center;
   padding: 25px 10px !important;
   transition: ease all 0.3s;
   text-decoration: none;
   font-size: 18px;
   color: #333;
+}
+
+.category-menu > li > a > img{
+  max-height: 31px;
+  margin-right: 20px;
 }
 
 .category-menu > li > a:hover{

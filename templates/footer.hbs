@@ -161,4 +161,12 @@
       },
     },
   };
+
+  const articleAccordHeader = document.getElementById('articleAccordHeader');
+  const articleAccordBody = document.getElementById('articleAccordBody');
+
+  articleAccordHeader.addEventListener('click', () => {
+      articleAccordHeader.classList.toggle('article-accord-header-open');
+      articleAccordBody.classList.toggle('article-accord-body-open');
+  });
 </script>

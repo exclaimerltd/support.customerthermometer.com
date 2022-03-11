@@ -11,6 +11,100 @@
     </div>
   </nav>
 
+  {{#is section.id 4415853847185}}
+    <div class="row">
+    <div class="col">
+      <div class="cont-grey">
+        {{#if settings.show_recent_activity}}
+          {{recent_activity}}
+        {{/if}}
+      </div>
+      <div class="cont-grey recent-activity">
+        <h2>Still need help?</h2>
+        <a href="/hc/en-gb/requests/new" class="submit-a-request">CONTACT THE MINISTRY OF MAGIC</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <header class="page-header article-header article-header-int">
+        <img src="https://cdn.customerthermometer.com/zendesk/assets/cat-{{section.id}}.png" />
+        <h2>{{section.name}}</h2>
+        {{#if section.description}}
+          <p class="page-header-description">{{section.description}}</p>
+        {{/if}}
+      </header>
+      <p>Click the logo of what you’d like to integrate with.</p>
+      {{#if section.sections}}
+        <ul class="integration-list">
+        {{#each section.sections}}
+          <li class="integration-list-item">
+            <a href="{{url}}">
+              <img src="https://cdn.customerthermometer.com/zendesk/assets/integ-{{id}}.png" />
+            </a>
+          </li>
+        {{/each}}
+        </ul>
+      {{/if}}
+      <p style="text-align: center;">
+      If you don’t see your 3rd party software – take a look at our “universal integration method” page.
+      </p>
+      {{pagination "section.sections"}}
+    </div>
+  </div>
+  {{else}}
+
+  {{#is section.id 360005758058}}
+    <div class="row">
+    <div class="col">
+      <div class="cont-grey">
+        {{#if settings.show_recent_activity}}
+          {{recent_activity}}
+        {{/if}}
+      </div>
+      <div class="cont-grey recent-activity">
+        <h2>Still need help?</h2>
+        <a href="/hc/en-gb/requests/new" class="submit-a-request">CONTACT THE MINISTRY OF MAGIC</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <header class="page-header article-header article-header-int">
+        <img src="https://cdn.customerthermometer.com/zendesk/assets/cat-{{section.id}}.png" />
+        <h2>{{section.name}}</h2>
+        {{#if section.description}}
+          <p class="page-header-description">{{section.description}}</p>
+        {{/if}}
+      </header>
+      <p>Click the logo of what you’d like to integrate with.</p>
+      {{#if section.sections}}
+        <ul class="integration-list">
+        {{#each section.sections}}
+          <li class="integration-list-item">
+            <a href="{{url}}">
+              <img src="https://cdn.customerthermometer.com/zendesk/assets/integ-{{id}}.png" />
+            </a>
+          </li>
+        {{/each}}
+        </ul>
+      {{/if}}
+      <p style="text-align: center;">
+      If you don’t see your 3rd party software – take a look at our “universal integration method” page.
+      </p>
+      {{pagination "section.sections"}}
+    </div>
+  </div>
+  {{else}}
+    {{#if section.sections}}
+        <ul class="articles">
+          {{#each section.sections}}
+            <li>
+              <a href="{{url}}" class="section-sub-section">{{name}}</a>
+            </li>
+          {{/each}}
+        </ul>
+      {{/if}}
+  {{/is}}
+  
+  {{/is}}
+
   <!-- MAIN SECTIONS -->
   {{#if section.articles}}
   <div class="row">
@@ -53,49 +147,6 @@
     </div>
   </div>
   {{/if}}
-
-  <!-- INTERGRATIONS -->
-
-  {{#is section.id 360005758058}}
-  <div class="row">
-    <div class="col">
-      <div class="cont-grey">
-        {{#if settings.show_recent_activity}}
-          {{recent_activity}}
-        {{/if}}
-      </div>
-      <div class="cont-grey recent-activity">
-        <h2>Still need help?</h2>
-        <a href="/hc/en-gb/requests/new" class="submit-a-request">CONTACT THE MINISTRY OF MAGIC</a>
-      </div>
-    </div>
-    <div class="col col-2">
-      <header class="page-header article-header article-header-int">
-        <img src="https://cdn.customerthermometer.com/zendesk/assets/cat-{{section.id}}.png" />
-        <h2>{{section.name}}</h2>
-        {{#if section.description}}
-          <p class="page-header-description">{{section.description}}</p>
-        {{/if}}
-      </header>
-      <p>Click the logo of what you’d like to integrate with.</p>
-      {{#if section.sections}}
-        <ul class="integration-list">
-        {{#each section.sections}}
-          <li class="integration-list-item">
-            <a href="{{url}}">
-              <img src="https://cdn.customerthermometer.com/zendesk/assets/integ-{{id}}.png" />
-            </a>
-          </li>
-        {{/each}}
-        </ul>
-      {{/if}}
-      <p style="text-align: center;">
-      If you don’t see your 3rd party software – take a look at our “universal integration method” page.
-      </p>
-      {{pagination "section.sections"}}
-    </div>
-  </div>
-  {{/is}}
 
 <!-- WIP Do Not Remove
 <script>

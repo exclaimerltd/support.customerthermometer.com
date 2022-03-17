@@ -27,11 +27,19 @@
           {{/each}}
         {{else}}
           {{#each sections}}
+          {{#is id 4505629553565}}
+            <li>
+              <a href='{{url}}' id="{{id}}">
+                {{name}}
+              </a>
+            </li>
+            {{else}}
             <li>
               <a href='{{url}}' id="{{id}}">
                 <img src="https://cdn.customerthermometer.com/zendesk/assets/cat-{{id}}.png" />{{name}}
               </a>
             </li>
+          {{/is}}
           {{/each}}
         {{/if}}
       {{/each}}
